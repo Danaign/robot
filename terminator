@@ -1,0 +1,6 @@
+roslaunch schunk_svh_simulation svh_gazebo_standalone.launch
+rosrun moveit_tutorial2 moveit.py
+roslaunch ur10e_hand_svh_moveit_config demo.launch
+
+
+rostopic pub /move_commands std_msgs/String "data: 'danai'"
